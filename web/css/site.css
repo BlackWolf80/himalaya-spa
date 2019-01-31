@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+
+
+@font-face{
+
+    font-family: 'Geometria';
+
+    src: url('../fonts/geometria.eot');
+
+    src: url('../fonts/geometria.eot?iefix') format('eot'),
+
+    url('../fonts/geometria.woff') format('woff'),
+
+    url('../fonts/geometria.svg#webfont') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+@font-face{
+
+    font-family: 'Iskracyr-regular';
+
+    src: url('../fonts/iskracyr-regular.eot');
+
+    src: url('../fonts/iskracyr-regular.eot?iefix') format('eot'),
+
+    url('../fonts/iskracyr-regular.woff') format('woff'),
+
+    url('../fonts/iskracyr-regular.svg#webfont') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+}
+
+
+@font-face{
+
+    font-family: '__IskraCYR-Medium_5';
+
+    src: url('../fonts/iskracyr-medium.eot');
+
+    src: url('../fonts/iskracyr-medium.eot?iefix') format('eot'),
+
+    url('../fonts/iskracyr-medium.woff') format('woff'),
+
+    url('../fonts/iskracyr-medium.svg#webfont') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+}
+
+
+#u89056 {
+    z-index: 373;
+    width: 142px;
+    box-shadow: 0px 0px 13px rgba(255,255,255,0.5),0px 0px 13px rgba(255,255,255,0.5);
+    background-color: #FFFFFF;
+    border-radius: 106px;
+    padding-bottom: 67px;
+    /*position: fixed;*/
+    position: absolute;
+    top: 10px;
+    left: 43%;
+    margin-left: -479px;
+}
+
+
+
+.t228__imglogo {
+    width: 75%;
+    position: relative;
+    left: 20px;
+    top: 23px;
+}
+
+
+
+
+    .h1_back{
+        z-index: 223;
+        width: 1109px;
+        text-shadow: 0px 0px 22px rgba(0, 0, 0, 1);
+        box-shadow: none;
+        background-color: transparent;
+        text-align: center;
+        font-size: 60px;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        line-height: 70px;
+        font-family: '__IskraCYR-Medium_5';
+        font-weight: 400;
+        position: relative;
+        top: 50px;
+        left: -15%;
+    }
+
+    .h1_back p{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+
+    .top_menu>ul>li{
+    color: #F6F7F6;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-family: 'Iskracyr-regular';
+    text-transform: uppercase;
+    padding: 0px 1em;
+    position: relative;
+    left: -70px;
+}
+
+.top_menu>ul>li>a{
+    color: #F6F7F6;
+    text-shadow: 1px 1px 14px rgba(0, 0, 0, 1);
+}
+
+.t-width_100 iframe{
+    height: 40em;
+    margin-bottom: -16em;
+}
+
+#rec59329910{
+    display: inline;
+}
+.t778{
+    /*display: inline-block;*/
+    width: 104%;
+}
+
+
+.t778 .t-col_6{
+    margin: 0 25% 0 25%;
+}
+
+.t778 img{
+    margin: 10px 0 0 0;
+    /*width: 95%;*/
+}
+
+.t778 .modal img{width: 95%;}
+
+.t220{
+    position: relative;
+    top: 18em;
+}
+
+.modal{
+    top: 30%;
+}
+
+
+.t778 .modal{
+    margin-top: -15%;
+}
+
+.t778 .modal-lg{
+    width: 90%;
+}
+
+.t778 .des-left{
+    text-align: left;
+}
+
+.block_cent{
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+#gallery{
+   margin-top: 10%;
+}
+
+.site-login{
+  margin: 5em 5em 0 0;
+
+}
+.content{
+    margin-top: 5em;
+}
+.image_category_adm{width: 30%}
+
+.t030{
+    /*text-shadow: 2px 2px 11px rgba(86, 114, 164, 1);*/
+
+}
+.form-feedback{
+    position: fixed;
+    top: 0px;  /* если ноль заменить на число (и в скрипте тоже), то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом. Применим, например, при фиксированном сверху меню */
+    z-index: 101;
+}
+
+
+.fixed-box {
+    height: 60px;
+}
+.fixed-div {
+    height: 60px;
+}
+.fixed-div img {
+    vertical-align: middle;
+    position: relative;
+    top: 0em;
+    left: -7em;
+}
+.fixed-div  .field-hifeedback-verifycode{
+    position: relative;
+    left: 9em;
+}
+.fixed {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
