@@ -47,7 +47,7 @@ class AppController extends Controller
     }
     public function mailSend($emFrom,$emTo,$model,$subject,$layoutMessage){
         Yii::$app->mailer->compose ($layoutMessage, ['model' => $model])
-            ->setFrom ([$emFrom => 'Сервис обратной связи Technograni']) //от кого
+            ->setFrom ([$emFrom => 'Заказ звонка Гималаи спа']) //от кого
             ->setTo ($emTo)                                              //кому
             ->setSubject ($subject)                                      //заголовок
             ->send ();

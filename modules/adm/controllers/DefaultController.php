@@ -1,8 +1,8 @@
 <?php
 
 namespace app\modules\adm\controllers;
-
-use yii\web\Controller;
+use app\modules\adm\models\CallbackSearch;
+use Yii;
 
 /**
  * Default controller for the `adm` module
@@ -14,7 +14,12 @@ class DefaultController extends AppAdmController
      * @return string
      */
     public function actionIndex()
-    {
-        return $this->render('index');
+    {$time = date('H:i:s');
+        $searchModel = new CallbackSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        return $this->render('index',[
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+            'time' => $time]);
     }
 }

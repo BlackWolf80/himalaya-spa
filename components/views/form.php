@@ -1,4 +1,10 @@
+<?php
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
+use kartik\datetime\DateTimePicker;
 
+?>
 <?php if($type == 'button'):?>
 
 
@@ -26,7 +32,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title" id="onlineForm">
-                        Выбор  услуги
+                        Заказ услуги
                     </h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -34,12 +40,45 @@
                 </div>
                 <div class="modal-body">
 
+                    <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+
+                    <?= $form->field($model, 'service')
+                        ->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\HiProducts::find()->all(),'name','name')) ?>
+
+                    <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+
+                    <?= $form->field($model, 'phone') ?>
+
+                    <?php
+                    if($model->date) {
+                        $model->date = date("Y-m-d", (integer) $model->date);
+                    }
+                    echo $form->field($model, 'date')->widget(DateTimePicker::className(),[
+                        'name' => 'dp_1',
+                        'type' => DateTimePicker::TYPE_INPUT,
+                        'options' => ['placeholder' => 'Ввод даты...'],
+                        'convertFormat' => true,
+                        'value'=> date("Y-m-d",(integer) $model->date),
+                        'pluginOptions' => [
+                            'format' => 'yyyy-MM-dd',
+                            'autoclose'=>true,
+                            'weekStart'=>1, //неделя начинается с понедельника
+                            'startDate' => date('Y-m-d'), //самая ранняя возможная дата
+                            'todayBtn'=>true, //снизу кнопка "сегодня"
+                        ]
+                    ]); ?>
+
+                    <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+                        'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+                    ]) ?>
+
+                    <div class="form-group">
+                        <?= Html::submitButton('Заказать', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+                    </div>
+
+                    <?php ActiveForm::end(); ?>
 
 
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
                 </div>
             </div>
         </div>

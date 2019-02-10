@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\HiCategory */
 
 $this->title = 'Редактирование: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => $model->nameModel, 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->nameModel, 'url' => ['/adm']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Редактирование';
 ?>

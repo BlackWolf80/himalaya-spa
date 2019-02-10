@@ -33,8 +33,10 @@ AppAsset::register($this);
 
 
 
-    <meta name="description" content="СПА салон тайского массажа в Москве и Одинцово.
-    Выгодные цены, удобное расположение, сотни положительных отзывов, мы с радостью ждем гостей!" />
+    <meta name="description" content="Спа салон №1 в Краснодаре! Профессиональные мастера, много видов массажа и прочих SPA процедур"/>
+    <meta name="keywords" content="гималаи спа, массаж краснодар, массаж +для мужчин краснодар, спа краснодар, спа краснодар официальный сайт, himalaya-spa, gimalai-spa, талассотерапия краснодар, талассотерапия, spa краснодар, спа салон краснодар"/>
+    <meta name="generator" content="2018.1.0.386"/>
+    <meta name="yandex-verification" content="2b552b8891c0a424"/><!-- custom meta -->
 
     <!--    <link rel="canonical" href="http://sensip.ru/">-->
 
@@ -189,7 +191,13 @@ AppAsset::register($this);
                             <div class="t451m__right_social_links t451m__actions_item">
                                 <div class="t451__right_social_links_wrap"> </div>
                             </div>
-                            <div class="t451m__right_descr t-descr t-descr_xs" field="descr" style="color:#08080a;font-size:13px;font-weight:400;font-family:&apos;Arial&apos;;">СЕНСИП ПУШКИНСКАЯ<br />+7 (965) 366-50-00<span class="redactor-invisible-space"><br />СЕНСИП ОДИНЦОВО<br />+7 (499) 391-98-31<br /></span></div>
+                            <div class="t451m__right_descr t-descr t-descr_xs" field="descr" style="color:#08080a;font-size:13px;font-weight:400;font-family:&apos;Arial&apos;;">
+                                ГИМАЛАИ СПА <br />
+                                <span class="redactor-invisible-space"><br />
+                                    г. Краснодар, ул. Ставрольская 163/1<br />+7 (988) 240-08-62<br />
+                                +7 (988) 240-08-63
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -246,7 +254,13 @@ AppAsset::register($this);
                             <div class="t451m__right_social_links t451m__actions_item">
                                 <div class="t451__right_social_links_wrap"> </div>
                             </div>
-                            <div class="t451m__right_descr t-descr t-descr_xs" field="descr" style="color:#08080a;font-size:13px;font-weight:400;font-family:&apos;Arial&apos;;">СЕНСИП ПУШКИНСКАЯ<br />+7 (965) 366-50-00<span class="redactor-invisible-space"><br />СЕНСИП ОДИНЦОВО<br />+7 (499) 391-98-31<br /></span></div>
+                            <div class="t451m__right_descr t-descr t-descr_xs" field="descr" style="color:#08080a;font-size:13px;font-weight:400;font-family:&apos;Arial&apos;;">
+                                ГИМАЛАИ СПА <br />
+                                <span class="redactor-invisible-space"><br />
+                                    г. Краснодар, ул. Ставрольская 163/1<br />+7 (988) 240-08-62<br />
+                                +7 (988) 240-08-63
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -532,12 +546,7 @@ AppAsset::register($this);
 </div>
 <!--/footer--></div><!--/allrecords--><!-- Tilda copyright. Don't remove this line -->
 
-<!-- Stat --><!-- Yandex.Metrika counter 19432984 --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter19432984 = new Ya.Metrika2({id:19432984, webvisor:true, clickmap:true, trackLinks:true,accurateTrackBounce:true,ecommerce:true}); w.mainMetrika = 'yaCounter19432984'; } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2");</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/19432984" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-<!-- /Yandex.Metrika counter --><script type="text/javascript">if (! window.mainTracker) { window.mainTracker = 'tilda'; }	(function (d, w, k, o, g) { var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);}; s.type = "text/javascript"; s.async = true; s.key = k; s.id = "tildastatscript"; s.src=g; if (w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); } })(document, window, 'cb3d64474a15600a36f87701b2a2caea','script','https://stat.tildacdn.com/js/tildastat-0.2.min.js');
-</script>
+
 <!--    /footer-->
 <script src="/js/bootstrap.min.js"></script>
 <?php $this->endBody() ?>

@@ -30,7 +30,7 @@ AdmAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name.' - администратор',
-        'brandUrl' => '/adm',
+        'brandUrl' => '/adm/',
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
@@ -38,6 +38,7 @@ AdmAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
+            ['label' => 'Онлайн заказы', 'url' => ['/adm/callback/']],
             ['label' => 'Каталог',
 
                 'items' => [
